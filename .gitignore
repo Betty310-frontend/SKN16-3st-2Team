@@ -13,9 +13,33 @@ __pycache__/
 .env
 .venv/
 venv/
+env/
+
+# Conda environments
+conda-meta/
+envs/
+pkgs/
+.conda/
+
+# Conda environment configuration (로컬 전용)
+environment.yml
+environment.yaml
+conda-env.yml
+conda-env.yaml
+
+# Local execution scripts (로컬 전용)
+setup_conda_env.sh
+*_local.sh
+*_local.py
+
+# Local configuration
+config_local.py
+settings_local.py
 
 # Data and vectorDB
-vectordb/
+# vectordb/
+
+# Local data files
 
 # OS files
 .DS_Store
@@ -29,5 +53,13 @@ Thumbs.db
 # Logs
 *.log
 
-# Ignore all files in scripts output (if any)
-scripts/output/
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+
+# IDE specific files
+.idea/
+*.sublime-project
+*.sublime-workspace
